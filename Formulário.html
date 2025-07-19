@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                background-color:rgb(147, 152, 124);
+                padding: 30px;
+            }
+            h1 {
+                color:darkgreen;
+                text-align: center;
+            }
+            form {
+                background-color: rgb(192, 175, 139);
+                padding: 20px;
+                border-radius: 10px;
+                margin: auto;
+                max-width: 600px;
+            }
+            label {
+                display: block;
+                margin-top: 15px;
+                font-weight: bold;
+            }
+            input[type="text"],
+            input[type="number"],
+            select,
+            textarea{
+                width: 96%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #4b694e;
+                background-color:rgb(241, 233, 216) ;
+            }
+            input[type="checkbox"],
+            input[type="radio"] {
+                margin-right: 8px;
+            }
+            textarea {
+                resize: vertical;
+            }
+            button {
+                margin-top: 20px;
+                padding: 12px 20px;
+                background-color:rgba(0, 255, 85, 0.349);
+                color:white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: rgba(94, 255, 0, 0.253);
+            }
+            a{
+               
+                color: rgb(255, 255, 255);
+                border-radius: 20px;
+           
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulário de Feedback</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="serie">Série Escolar:</label>
+            <select id="serie" name="serie">
+                <option value="">Selecione...</option>
+                <option>1º ano</option>
+                <option>2º ano</option>
+                <option>3º ano</option>
+            </select>
+            <label for="escola">Escola:</label>
+            <input type="text" id="escola" name="escola">
+            <label>Qual disciplina você tem mais dificuldade?</label>
+            <input type="radio" name="dificuldade" value="matematica">Matemática
+            <input type="radio" name="dificuldade" value="quimica">Química
+            <input type="radio" name="dificuldade" value="ambas">Ambas
+            <input type="radio" name="dificuldade" value="nenhuma">Nenhuma
+            <label>Quais conteúdos você praticou?</label>
+            <input type="checkbox" name="conteudo" value="divisao"> Divisão
+            <input type="checkbox" name="conteudo" value="estequiometria"> Estequiometria
+            <input type="checkbox" name="conteudo" value="lei ponderal"> Leis Ponderais
+            <input type="checkbox" name="conteudo" value="mol"> Cálculo de mol
+            <input type="checkbox" name="conteudo" value="regra"> Regra de três
+            <label>As explicações ajudarm você a entender melhor os conteúdos?</label>
+            <input type="radio" name="ajuda" value="sim"> Sim
+            <input type="radio" name="ajuda" value="mais-ou-menos"> Mais ou menos
+            <input type="radio" name="ajuda" value="nao"> Não
+            <label>O nível das questões estava:</label>
+            <input type="radio" name="nivel" value="facil"> Fácil demais
+            <input type="radio" name="nivel" value="ideal"> Ideal
+            <input type="radio" name="nivel" value="dificil"> Difícil demais
+            <label>O que mais te ajudou na plataforma?</label>
+            <select name="ajuda-mais">
+                <option value="">Selecione...</option>
+                <option>Resolução comentada</option>
+                <option>Explicação teórica</option>
+                <option>Estilo das perguntas</option>
+            </select>
+            <label for="sugestao">Sugestão ou crítica:</label>
+            <textarea id="sugestao" name="sugestao" rows="4"></textarea>
+            <center>
+           <button type="submit"> <a href="P.Agradecimento.html">Enviar </a></button>
+            </center>
+        </form>
+    </body>
+    </html>

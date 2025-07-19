@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TelaLogin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color:rgb(199, 192, 169);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color:rgb(147, 152, 124);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+        .container h1 {
+            color:rgb(192, 175, 139);
+            margin-bottom: 20px;
+        }
+        .logout-button {
+            background-color: rgba(0, 255, 85, 0.349);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            height: 50px;
+            width: 100px;
+        }
+        .logout-button:hover {
+            background-color: rgba(94, 255, 0, 0.253);
+        }
+    </style>
+<body>
+<div class="container">
+    <h1>QMATH: aprendendo juntos, crescendo sempre!</h1>
+    <h3>Obrigado por visitar nossa página e responder<br>
+    ao formulário! Esperamos que o conteúdo tenha te <br>
+     ajudado a aprender mais sobre Matemática e Química de um<br>
+      jeito simples e acessível. &hearts; </h3>
+      <button class="logout-button" onclick="volta()">Sair</button>
+   
+</div>
+<script>
+    function volta() {
+        window.location.href = "index.html";
+    }
+    </script>
+</body>
+    </html>
+
+

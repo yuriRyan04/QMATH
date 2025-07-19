@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>TelaLogin</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background-color:rgb(199, 192, 169);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+
+
+
+
+
+
+
+        .login-container {
+            background-color:rgb(147, 152, 124);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+
+
+
+
+
+
+
+        .login-container h2 {
+            color:rgb(192, 175, 139);
+            margin-bottom: 20px;
+        }
+
+
+
+
+
+
+
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 96%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+
+
+
+
+
+
+
+        .login-container button {
+            background-color: rgba(0, 255, 85, 0.349);
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+
+
+
+
+
+
+
+        .login-container button:hover {
+            background-color: rgba(94, 255, 0, 0.253);
+        }
+    </style>
+<body>
+<div class="login-container">
+    <h1>Login</h1>
+    <form onsubmit="return login()">
+        <input type="text" id="usuario" placeholder="Usuário" required>
+        <input type="password" id="senha" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+        <h3><div class="mens" id="mensagem"></h3></div>
+    </form>
+</div>
+<script>
+    function login() {
+        const usuario = document.getElementById("usuario").value;
+        const senha = document.getElementById("senha").value;
+        const mensagem = document.getElementById("mensagem");
+        if (usuario === "QMATH" && senha === "1234") {
+            mensagem.style.color = "verde";
+            mensagem.textContent = "LOGIN AUTORIZADO!";
+            setTimeout(() => {
+                window.location.href = "QMATH.html";
+            }, 1000);
+            return false;
+        } else {
+            mensagem.style.color = "b4b7a4";
+            mensagem.textContent = "USUÁRIO OU SENHA INCORRETO. TENTE NOVAMENTE";
+            return false;
+        }
+    }
+    </script>
+</body>
+    </html>
